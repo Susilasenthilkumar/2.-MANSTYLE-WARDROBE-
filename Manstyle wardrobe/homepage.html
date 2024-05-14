@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="style_hp.css">
+<body>
+  
+  <div class="navbar">
+    <ul>
+      <li><a href="#">signup</a></li>
+      <li><a href="#">Message</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Chart</a></li>
+    </ul>
+
+    <img src="icon.png">
+  </div>
+  <div class="label">
+    <button style="background-color: white;" onclick="searchdress()">Search</button><input type="text" id="searchInput">
+  </div>
+  <section class="section">
+    <div class="dropdown">
+      <button class="dropbtn">Category</button>
+      <div class="dropdown-content">
+        <a href="shirtpage.html">Shirts & T-Shirts</a>
+        <a href="pants.html">Pant collections</a>
+        <a href="homepage.html">Home</a>
+      </div>
+    </div>
+<div class="category">
+    <button>Services</button>
+  </div>
+  <div class="ship"><button>Ship to</button></div>
+  <div class="help"><button>Help</button></div>
+  </section>
+  <br/><br/>
+  <h1 class="best">Top-Ranking Products</h2>
+  <img src="centerpic.gif" class="img">
+  <div class="products"><h2>Products</h2></div>
+  <hr style="border-color:orange;border-width:  5px;">
+  <div class="collection">
+    <ul class="shirts"> 
+      <div class="blue">
+        <img src="s1.jpg" width="300" height="350">
+        <p>Blue-shirt<br/>Available size: S, M, L<br/>rs.500.00<br/>Free shipping</p>
+      </div>
+      <br/>
+      <div class="whitesht">
+        <img src="s2.jpg" width="300" height="350">
+        <p>Pure cotton-white shirt<br/>Available size: S, M, L<br/>rs.1500.00<br/>Ratings:* * * * </p>
+      </div>
+      <br/>
+      <div class="printed-tsht">
+        <img src="s3.jpg" width="300" height="350">
+      <p>Customize printed shirt<br/>Available size: S, M, L, xl<br/>rs.1000.00<br/>Free delivery</p>
+      </div>
+      <br/>
+      <div class="designer-sht">
+      <img src="s4.jpg" width="300" height="350">
+      <p>Designers shirts<br/>Available size: S, M<br/>rs.1500.00</p>
+      </div>
+      <br/>
+      <div class="styling">
+      <img src="s5.jpg" width="300" height="350">
+      <p>Open style shirt<br/>Available size: S, M, L<br/>rs.2000.00<br/>Free shipping</p>
+      </div>
+    </ul>
+  </div>
+  <br/>
+  <div class="end">
+    <h2>Contact:</h2>
+    <h6>Abiba323gmail.com</h6>
+    <h6>www.abibastore.in</h6>
+    <h6>128,old busstand road</h6>
+    <h6>nearby annasaalai-Thanjavur</h6>
+    <h6>Pincode:613 533</h6>
+    <img src="c1.png">
+</div>
+
+<script>
+  function searchdress() {
+    let searchitem = document.getElementById('searchInput').value.toLowerCase();
+    
+    if (searchitem == 'shirts') {
+        window.location.href='shirtpage.html';
+    } 
+    else if(searchitem=='pants'){
+           
+           window.location.href='pants.html';
+           }
+    else {
+        alert('No results found for your search term.');
+    }
+}
+
+</script>
+
+ </body>
+</html>
